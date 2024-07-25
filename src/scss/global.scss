@@ -1,0 +1,80 @@
+// Viewport based pixel to vw/vh functions for sizing and positioning elements based on project mocks.
+$mobile-mocks-width: 414;
+$desktop-mocks-width: 1600;
+$desktop-mocks-height: 900;
+@function dvw($pixels){
+  @return $pixels / $desktop-mocks-width * 100vw;
+}
+@function dvh($pixels){
+  @return $pixels / $desktop-mocks-height * 100vh;
+}
+@function mvw($pixels){
+  @return $pixels / $mobile-mocks-width * 100vw;
+}
+
+
+@font-face{
+    font-family: "TradeGothic";
+    src: url("/fonts/trade-gothic-bold.ttf") format("truetype");
+    font-weight: 700;
+    font-style: bold;
+}
+@font-face{
+    font-family: "TradeGothic";
+    src: url("/fonts/trade-gothic-bold-condensed.ttf") format("truetype");
+    font-weight: 500;
+    font-style: condensed;
+}
+@font-face{
+    font-family: "Merriweather";
+    src: url("/fonts/Merriweather-Regular.ttf") format("truetype");
+}
+@font-face{
+    font-family: "Titillium";
+    src: url("/fonts/Titillium-Thin.otf") format("opentype");
+    font-weight: 200;
+    font-style: thin;
+}
+@font-face{
+    font-family: "Titillium";
+    src: url("/fonts/Titillium-Regular.otf") format("opentype");
+    font-weight: 400;
+    font-style: normal;
+}
+
+/* resets */
+.application{
+    font-family: unset;
+    line-height: unset;
+}
+.title{
+    font-family: "Merriweather", serif !important;
+}
+.v-card__title{padding-bottom: 0px;}
+ul{margin-bottom: 16px;}
+/* resets */
+
+$s01: 173;
+$s02: 110;
+$s03: 77;
+$s04: 73;
+$s05: 55;
+$s06: 50;
+$s07: 36;
+$s08: 34;
+$s09: 31;
+$s10: 25;
+$s11: 20;
+
+h1{
+    font-family: "TradeGothic", sans-serif;
+    font-weight: 700;
+    line-height: 1;}
+h2, h3{ 
+    font-family: "Merriweather", serif;}
+h4, h5{ 
+    font-family: "TradeGothic", sans-serif; 
+    font-weight: 500;}
+p, html, li{
+    font-family: "Titillium", sans-serif;}
+
